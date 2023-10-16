@@ -2,7 +2,7 @@ import csv
 import json
 
 # CSV file path
-csv_file = "C:\\Users\\PH332EH\\OneDrive - EY\\Documents\\Carrier\\Toshiba\\Python\\Resultant_file.csv"
+csv_file = "input_file_path\Resultant_file.csv"
 
 # JSON data structure
 json_data = {
@@ -44,7 +44,7 @@ with open(csv_file, mode="r") as file:
 json_string = json.dumps(json_data, indent=2)
 
 # Write to JSON file
-json_file = "C:\\Users\\PH332EH\\OneDrive - EY\\Documents\\Carrier\\Toshiba\\Python\\finalData.json"
+json_file = "output_file_path\finalData.json"
 with open(json_file, mode="w") as file:
     json.dump(json_data, file, indent=2)
 
